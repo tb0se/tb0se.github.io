@@ -1,5 +1,5 @@
 ---
-import { astroUrl } from '../utils/constants';
+import { astroUrl, coderUrl } from '../utils/constants';
 const year = new Date().getFullYear();
 ---
 
@@ -11,7 +11,7 @@ const year = new Date().getFullYear();
 			Powered by
 			<a class='underline text-blue-600' href={astroUrl}>Astro</a>
 			&
-			<a class='underline text-blue-600' href='/#'>Coder</a>
+			<a class='underline text-blue-600' href={coderUrl}>Coder</a>
 		</p>
 	</section>
 </footer>
