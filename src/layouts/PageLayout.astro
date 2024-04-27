@@ -8,9 +8,9 @@ const { heading } = Astro.props;
 
 <div class='flex flex-1 w-full justify-center'>
 	<main
-		class='flex flex-col flex-1 max-w-[70rem] gap-y-4 w-full pt-12 px-4 sm:px-0'
+		class='flex flex-col flex-1 max-w-[70rem] gap-y-4 w-full py-12 px-4 sm:px-0'
 	>
-		<h1 class='text-5xl text-bold text-left'>{heading}</h1>
+		<h1 class='text-5xl text-bold text-center sm:text-left'>{heading}</h1>
 		<slot />
 	</main>
 </div>

@@ -1,18 +1,19 @@
 ---
+import { Icon } from 'astro-icon/components';
 import Layout from '../layouts/Layout.astro';
 import PageLayout from '../layouts/PageLayout.astro';
 ---
 
 <Layout title='About'>
 	<PageLayout heading='About'>
-		<p class='text-xl font-medium'>
+		<p class='text-xl font-medium text-center sm:text-left'>
 			I am a front-end engineer with over 2 years of hands-on experience in
 			React, a framework I find both challenging and rewarding. I have a strong
 			passion for learning and constantly strive to expand my knowledge, whether
 			through tackling new technologies or delving into the depths of web
 			accessibility and semantic HTML.
 		</p>
-		<p class='text-xl font-medium'>
+		<p class='text-xl font-medium text-center sm:text-left'>
 			I am an avid participant in side projects, leveraging my skills to bring
 			creative ideas to life outside of my regular work. My eagerness and
 			curiosity drive me to explore innovative solutions and stay abreast of
@@ -20,5 +21,58 @@ import PageLayout from '../layouts/PageLayout.astro';
 			me with a solid foundation for navigating the dynamic realm of web
 			development.
 		</p>
+
+		<section class='w-full flex flex-col gap-y-4 mt-8'>
+			<h2 class='text-4xl text-bold text-center sm:text-left'>
+				Programming Languages
+			</h2>
+			<div class='flex w-full gap-x-4 justify-center sm:justify-start'>
+				<Icon class='h-12 w-12' name='logos:javascript' title='JavaScript' />
+				<Icon
+					class='h-12 w-12'
+					name='logos:typescript-icon'
+					title='Typescript'
+				/>
+				<Icon class='h-12 w-12' name='logos:python' title='Python' />
+				<Icon class='h-12 w-12' name='logos:html-5' title='HTML' />
+				<Icon class='h-12 w-12' name='logos:css-3' title='CSS' />
+			</div>
+		</section>
+
+		<section class='w-full flex flex-col gap-y-4 mt-8'>
+			<h2 class='text-4xl text-bold text-center sm:text-left'>Frameworks</h2>
+			<div class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'>
+				<Icon class='h-12 w-12' name='logos:react' title='React' />
+				<Icon class='h-12 w-12' name='logos:solidjs-icon' title='Solid.js' />
+				<Icon class='h-12 w-12' name='logos:svelte-icon' title='Svelte' />
+				<Icon class='h-12 w-12' name='logos:astro-icon' title='Astro.js' />
+				<Icon
+					class='h-12 w-12'
+					name='logos:tailwindcss-icon'
+					title='Tailwind'
+				/>
+				<Icon class='h-12 w-12' name='logos:nodejs-icon' title='Node.js' />
+				<Icon class='h-12 w-12' name='logos:postgresql' title='PostgreSQL' />
+				<Icon class='h-12 w-12' name='logos:bun' title='Bun.js' />
+				<Icon class='h-12 w-12' name='logos:docker-icon' title='Docker' />
+				<Icon class='h-12 w-12' name='logos:vitejs' title='Vite' />
+			</div>
+		</section>
+
+		<section class='w-full flex flex-col gap-y-4 mt-8'>
+			<h2 class='text-4xl text-bold text-center sm:text-left'>Other</h2>
+			<div class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'>
+				<Icon class='h-12 w-12' name='logos:aws' title='AWS' />
+				<Icon class='h-12 w-12' name='logos:jira' title='JIRA' />
+				<Icon class='h-12 w-12' name='logos:confluence' title='Confluence' />
+				<Icon class='h-12 w-12' name='logos:github' title='Github' />
+				<Icon
+					class='h-12 w-12'
+					name='logos:github-actions'
+					title='Github Actions'
+				/>
+				<Icon class='h-12 w-12' name='logos:ubuntu' />
+			</div>
+		</section>
 	</PageLayout>
 </Layout>
