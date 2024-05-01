@@ -1,10 +1,14 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import PageLayout from '../layouts/PageLayout.astro';
+import ProjectList from '../components/ProjectList.astro';
+
+const projects = await getCollection('projects');
 ---
 
 <Layout title='My projects'>
 	<PageLayout heading='My Projects'>
-		<p>Content is loading</p>
+		<ProjectList projects={projects} />
 	</PageLayout>
 </Layout>

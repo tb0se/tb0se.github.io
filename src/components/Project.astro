@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+type Props = {
+	project: CollectionEntry<'projects'>;
+};
+
+const { project } = Astro.props;
+---
+
+<article class='max-w-sm w-full rounded-md'>
+	<a href={`/projects/${project.slug}`} class='w-full'>
+		<Image
+			class='w-full rounded-t-md'
+			src={project.data.image}
+			alt={project.data.title}
+		/>
+		<footer class='bg-foreground w-full flex justify-center py-4 rounded-b-md'>
+			<h2 class='font-semibold text-3xl text-background'>
+				{project.data.title}
+			</h2>
+		</footer>
+	</a>
+</article>

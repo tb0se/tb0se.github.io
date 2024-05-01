@@ -13,15 +13,22 @@ import { Icon } from 'astro-icon/components';
 			class='hidden sm:flex gap-x-6 gap-y-2 bg-background sm:border-none border-y-2 border-solid border-gray-600'
 		>
 			<li>
-				<a class='hover:underline text-xl font-semibold' href='/about'>About</a>
+				<a
+					class='hover:underline text-xl font-semibold hover:text-blue-600'
+					href='/about'>About</a
+				>
 			</li>
 			<li>
-				<a class='hover:underline text-xl font-semibold' href='/projects'
+				<a
+					class='hover:underline text-xl font-semibold hover:text-blue-600'
+					href='/projects'
 					>Projects
 				</a>
 			</li>
 			<li>
-				<a class='hover:underline text-xl font-semibold' href='/contact'
+				<a
+					class='hover:underline text-xl font-semibold hover:text-blue-600'
+					href='/contact'
 					>Contact me
 				</a>
 			</li>
@@ -37,7 +44,6 @@ import { Icon } from 'astro-icon/components';
 	const menu = document.querySelector('#menu');
 
 	const toggleMobileMenu = () => {
-		console.log(menu?.classList);
 		if (menu && menu.classList.contains('hidden')) {
 			menu?.classList.remove('hidden');
 			menu?.classList.add(

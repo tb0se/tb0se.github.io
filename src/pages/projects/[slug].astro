@@ -1,0 +1,60 @@
+---
+import type { GetStaticPaths } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import PageLayout from '../../layouts/PageLayout.astro';
+import { Icon } from 'astro-icon/components';
+
+export const getStaticPaths = (async () => {
+	const projects = await getCollection('projects');
+	const paths = projects.map((project) => {
+		return {
+			params: {
+				slug: project.slug,
+			},
+			props: {
+				project,
+			},
+		};
+	});
+
+	return paths;
+}) satisfies GetStaticPaths;
+
+type Props = {
+	project: CollectionEntry<'projects'>;
+};
+
+const { project } = Astro.props;
+
+const { Content } = await project.render();
+---
+
+<Layout title={project.data.title} description={project.data.description}>
+	<PageLayout heading={project.data.title}>
+		<ul class='flex gap-x-4 items-center'>
+			<li>
+				<a href={project.data.github}>
+					<Icon class='h-12 w-12 rounded-full' name='logos:github-icon' />
+				</a>
+			</li>
+			{
+				project.data?.demo && (
+					<li>
+						<a
+							class='hover:text-blue-600 hover:underline'
+							href={project.data?.demo}
+							target='_blank'
+						>
+							Demo
+						</a>
+					</li>
+				)
+			}
+		</ul>
+		<div class='w-full mt-4'>
+			<Content />
+		</div>
+	</PageLayout>
+</Layout>
