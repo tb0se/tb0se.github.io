@@ -6,77 +6,186 @@ import PageLayout from '../layouts/PageLayout.astro';
 
 <Layout title='About'>
 	<PageLayout heading='About'>
-		<p class='text-xl font-medium text-center sm:text-left'>
-			I am a front-end engineer with over 2 years of hands-on experience in
-			React, a framework I find both challenging and rewarding. I have a strong
-			passion for learning and constantly strive to expand my knowledge, whether
-			through tackling new technologies or delving into the depths of web
-			accessibility and semantic HTML.
-		</p>
-
 		<section class='w-full flex flex-col gap-y-4 mt-8'>
-			<h2 class='text-4xl text-bold text-center sm:text-left'>
-				Programming Languages
-			</h2>
-			<div class='flex w-full gap-x-4 justify-center sm:justify-start'>
-				<Icon class='h-12 w-12' name='logos:javascript' title='JavaScript' />
-				<Icon
-					class='h-12 w-12'
-					name='logos:typescript-icon'
-					title='Typescript'
-				/>
-				<Icon class='h-12 w-12' name='logos:python' title='Python' />
-				<Icon class='h-12 w-12' name='logos:html-5' title='HTML' />
-				<Icon class='h-12 w-12' name='logos:css-3' title='CSS' />
-			</div>
+			<h2 class='text-4xl text-bold text-center sm:text-left'>Summary</h2>
+			<p class='text-xl font-medium text-center sm:text-left'>
+				I am a front-end engineer with over 3 years of hands-on experience in
+				React, a framework I find both challenging and rewarding. I have a
+				strong passion for learning and constantly strive to expand my
+				knowledge, whether through tackling new technologies or delving into the
+				depths of web accessibility and semantic HTML.
+			</p>
 		</section>
 
-		<section class='w-full flex flex-col gap-y-4 mt-8'>
-			<h2 class='text-4xl text-bold text-center sm:text-left'>Frameworks</h2>
-			<div class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'>
-				<Icon class='h-12 w-12' name='logos:react' title='React' />
-				<Icon class='h-12 w-12' name='logos:solidjs' title='Solid.js' />
-				<Icon class='h-12 w-12' name='logos:svelte-icon' title='Svelte' />
-				<Icon class='h-12 w-12' name='logos:astro-icon' title='Astro.js' />
-				<Icon
-					class='h-12 w-12'
-					name='logos:tailwindcss-icon'
-					title='Tailwind'
-				/>
-				<Icon class='h-12 w-12' name='logos:vitejs' title='Vite' />
-				<Icon class='h-12 w-12' name='logos:nodejs-icon' title='Node.js' />
-				<Icon class='h-12 w-12' name='logos:bun' title='Bun.js' />
-				<Icon class='h-12 w-12' name='logos:yarn' title='Yarn' />
-			</div>
-		</section>
+		<div class='grid grid-cols-1 md:grid-cols-2 gap-x-8'>
+			<!-- SKILLS -->
+			<article class='w-full flex flex-col gap-y-4 mt-8'>
+				<h2 class='text-4xl text-bold text-center sm:text-left'>Skills</h2>
 
-		<section class='w-full flex flex-col gap-y-4 mt-8'>
-			<h2 class='text-4xl text-bold text-center sm:text-left'>Databases</h2>
-			<div class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'>
-				<Icon class='h-12 w-12' name='logos:postgresql' title='PostgreSQL' />
-				<Icon class='h-12 w-12' name='logos:mysql' title='MySQL' />
-				<Icon class='h-12 w-12' name='logos:mongodb-icon' title='MongoDB' />
-				<Icon class='h-12 w-12' name='logos:sqlite' title='SQLite' />
-				<Icon class='h-12 w-12' name='logos:prisma' title='Prisma' />
-			</div>
-		</section>
+				<section class='w-full flex flex-col gap-y-4 mt-8'>
+					<h3 class='text-3xl text-bold text-center sm:text-left'>
+						Programming Languages
+					</h3>
+					<div class='flex w-full gap-x-4 justify-center sm:justify-start'>
+						<Icon
+							class='h-12 w-12'
+							name='logos:javascript'
+							title='JavaScript'
+						/>
+						<Icon
+							class='h-12 w-12'
+							name='logos:typescript-icon'
+							title='Typescript'
+						/>
+						<Icon class='h-12 w-12' name='logos:python' title='Python' />
+						<Icon class='h-12 w-12' name='logos:html-5' title='HTML' />
+						<Icon class='h-12 w-12' name='logos:css-3' title='CSS' />
+					</div>
+				</section>
 
-		<section class='w-full flex flex-col gap-y-4 mt-8'>
-			<h2 class='text-4xl text-bold text-center sm:text-left'>Other</h2>
-			<div class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'>
-				<Icon class='h-12 w-12' name='logos:aws' title='AWS' />
-				<Icon class='h-12 w-12' name='logos:jira' title='JIRA' />
-				<Icon class='h-12 w-12' name='logos:confluence' title='Confluence' />
-				<Icon class='h-12 w-12' name='logos:git-icon' title='Git' />
-				<Icon class='h-12 w-12' name='logos:github' title='Github' />
-				<Icon
-					class='h-12 w-12'
-					name='logos:github-actions'
-					title='Github Actions'
-				/>
-				<Icon class='h-12 w-12' name='logos:ubuntu' />
-				<Icon class='h-12 w-12' name='logos:docker-icon' title='Docker' />
-			</div>
-		</section>
+				<section class='w-full flex flex-col gap-y-4 mt-8'>
+					<h2 class='text-3xl text-bold text-center sm:text-left'>
+						Frameworks
+					</h2>
+					<div
+						class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'
+					>
+						<Icon class='h-12 w-12' name='logos:react' title='React' />
+						<Icon class='h-12 w-12' name='logos:solidjs' title='Solid.js' />
+						<Icon class='h-12 w-12' name='logos:svelte-icon' title='Svelte' />
+						<Icon class='h-12 w-12' name='logos:astro-icon' title='Astro.js' />
+						<Icon
+							class='h-12 w-12'
+							name='logos:tailwindcss-icon'
+							title='Tailwind'
+						/>
+						<Icon class='h-12 w-12' name='logos:vitejs' title='Vite' />
+						<Icon class='h-12 w-12' name='logos:nodejs-icon' title='Node.js' />
+						<Icon class='h-12 w-12' name='logos:bun' title='Bun.js' />
+						<Icon class='h-12 w-12' name='logos:yarn' title='Yarn' />
+					</div>
+				</section>
+
+				<section class='w-full flex flex-col gap-y-4 mt-8'>
+					<h3 class='text-3xl text-bold text-center sm:text-left'>Databases</h3>
+					<div
+						class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'
+					>
+						<Icon
+							class='h-12 w-12'
+							name='logos:postgresql'
+							title='PostgreSQL'
+						/>
+						<Icon class='h-12 w-12' name='logos:mysql' title='MySQL' />
+						<Icon class='h-12 w-12' name='logos:mongodb-icon' title='MongoDB' />
+						<Icon class='h-12 w-12' name='logos:sqlite' title='SQLite' />
+						<Icon class='h-12 w-12' name='logos:prisma' title='Prisma' />
+					</div>
+				</section>
+
+				<section class='w-full flex flex-col gap-y-4 mt-8'>
+					<h3 class='text-3xl text-bold text-center sm:text-left'>Other</h3>
+					<div
+						class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'
+					>
+						<Icon class='h-12 w-12' name='logos:aws' title='AWS' />
+						<Icon class='h-12 w-12' name='logos:jira' title='JIRA' />
+						<Icon
+							class='h-12 w-12'
+							name='logos:confluence'
+							title='Confluence'
+						/>
+						<Icon class='h-12 w-12' name='logos:git-icon' title='Git' />
+						<Icon class='h-12 w-12' name='logos:github' title='Github' />
+						<Icon
+							class='h-12 w-12'
+							name='logos:github-actions'
+							title='Github Actions'
+						/>
+						<Icon class='h-12 w-12' name='logos:ubuntu' />
+						<Icon class='h-12 w-12' name='logos:docker-icon' title='Docker' />
+					</div>
+				</section>
+			</article>
+
+			<!-- WORK EXPERIENCE -->
+			<section class='w-full flex flex-col gap-y-4 mt-8'>
+				<h2 class='text-4xl text-bold text-center sm:text-left'>
+					Work experience
+				</h2>
+				<div class='w-full flex justify-between items-center'>
+					<h3 class='text-xl text-bold text-left'>
+						BBD Software - Vodacom Financial Services
+					</h3>
+					<p class='min-w-fit'>2022 - Present</p>
+				</div>
+				<p class='flex flex-col gap-y-2 list-disc list-inside text-lg'>
+					Work as a front-end developer on a multi-step onboarding web-based
+					eCommerce platform for users to purchase point-of-sale devices and
+					manage their profiles.
+				</p>
+			</section>
+
+			<!-- EDUCATION -->
+			<section class='w-full flex flex-col gap-y-4 mt-8'>
+				<h2 class='text-4xl text-bold text-center sm:text-left'>Education</h2>
+				<ul class='flex flex-col gap-y-4'>
+					<li
+						class='flex flex-col md:flex-row justify-center md:justify-between items-center gap-y-2'
+					>
+						<div class='flex flex-col gap-y-2 flew-wrap'>
+							<h3
+								class='text-2xl text-bold text-center sm:text-left max-w-[400px]'
+							>
+								BSc Computer Science and Information Systems
+							</h3>
+							<p class='text-lg'>University of the Witwatersrand</p>
+						</div>
+
+						<p class='min-w-fit text-lg'>Completed 2020</p>
+					</li>
+
+					<li
+						class='flex flex-col md:flex-row justify-center md:justify-between items-center gap-y-2'
+					>
+						<div class='flex flex-col gap-y-2 flew-wrap'>
+							<h3 class='text-2xl text-bold text-center sm:text-left'>
+								BSc(Hons) Computer Science
+							</h3>
+							<p class='text-lg'>University of the Witwatersrand</p>
+						</div>
+
+						<p class='min-w-fit text-lg'>Completed 2024</p>
+					</li>
+				</ul>
+			</section>
+
+			<!-- CERTIFICATES -->
+			<section class='w-full flex flex-col gap-y-4 mt-8'>
+				<h2 class='text-4xl text-bold text-center sm:text-left'>
+					Certificates
+				</h2>
+				<ul class='flex gap-4 justify-center md:justify-normal'>
+					<li>
+						<div
+							data-iframe-width='150'
+							data-iframe-height='270'
+							data-share-badge-id='696e64a8-fa75-4ab7-b49c-00c046d376d8'
+							data-share-badge-host='https://www.credly.com'
+						>
+						</div>
+					</li>
+					<li>
+						<div
+							data-iframe-width='150'
+							data-iframe-height='270'
+							data-share-badge-id='25e2d6fd-3d99-44f6-9ddf-12ff6f0f683e'
+							data-share-badge-host='https://www.credly.com'
+						>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
 	</PageLayout>
 </Layout>
