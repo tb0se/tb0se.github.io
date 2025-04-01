@@ -14,5 +14,8 @@ export default defineConfig({
         'mysql', 'mongodb-icon', 'sqlite', 'prisma', 'git-icon'],
       heroicons: ['bars-3-solid']
     }
-  })]
+  })],
+  server: {
+    open: true
+  }
 });

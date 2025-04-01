@@ -6,7 +6,10 @@ import { Icon } from 'astro-icon/components';
 	<nav
 		class='flex items-center justify-between w-full mx-auto max-w-[70rem] px-4 sm:px-0'
 	>
-		<a class='uppercase text-2xl font-semibold' href='/'>thaborachidi</a>
+		<a
+			class='uppercase text-2xl font-semibold hover:underline hover:text-blue-600'
+			href='/'>thaborachidi</a
+		>
 
 		<ul
 			id='menu'
@@ -25,13 +28,13 @@ import { Icon } from 'astro-icon/components';
 					>Projects
 				</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a
 					class='hover:underline text-xl font-semibold hover:text-blue-600'
 					href='/contact'
 					>Contact me
 				</a>
-			</li>
+			</li> -->
 		</ul>
 		<button id='menuBtn' class='block sm:hidden'>
 			<Icon class='h-10 w-10' name='heroicons:bars-3-solid' />
