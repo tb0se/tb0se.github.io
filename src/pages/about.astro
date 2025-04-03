@@ -18,96 +18,6 @@ import PageLayout from '../layouts/PageLayout.astro';
 		</section>
 
 		<div class='grid grid-cols-1 md:grid-cols-2 gap-x-8'>
-			<!-- SKILLS -->
-			<article class='w-full flex flex-col gap-y-4 mt-8'>
-				<h2 class='text-4xl text-bold text-center sm:text-left'>Skills</h2>
-
-				<section class='w-full flex flex-col gap-y-4 mt-8'>
-					<h3 class='text-3xl text-bold text-center sm:text-left'>
-						Programming Languages
-					</h3>
-					<div class='flex w-full gap-x-4 justify-center sm:justify-start'>
-						<Icon
-							class='h-12 w-12'
-							name='logos:javascript'
-							title='JavaScript'
-						/>
-						<Icon
-							class='h-12 w-12'
-							name='logos:typescript-icon'
-							title='Typescript'
-						/>
-						<Icon class='h-12 w-12' name='logos:python' title='Python' />
-						<Icon class='h-12 w-12' name='logos:html-5' title='HTML' />
-						<Icon class='h-12 w-12' name='logos:css-3' title='CSS' />
-					</div>
-				</section>
-
-				<section class='w-full flex flex-col gap-y-4 mt-8'>
-					<h2 class='text-3xl text-bold text-center sm:text-left'>
-						Frameworks
-					</h2>
-					<div
-						class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'
-					>
-						<Icon class='h-12 w-12' name='logos:react' title='React' />
-						<Icon class='h-12 w-12' name='logos:solidjs' title='Solid.js' />
-						<Icon class='h-12 w-12' name='logos:svelte-icon' title='Svelte' />
-						<Icon class='h-12 w-12' name='logos:astro-icon' title='Astro.js' />
-						<Icon
-							class='h-12 w-12'
-							name='logos:tailwindcss-icon'
-							title='Tailwind'
-						/>
-						<Icon class='h-12 w-12' name='logos:vitejs' title='Vite' />
-						<Icon class='h-12 w-12' name='logos:nodejs-icon' title='Node.js' />
-						<Icon class='h-12 w-12' name='logos:bun' title='Bun.js' />
-						<Icon class='h-12 w-12' name='logos:yarn' title='Yarn' />
-					</div>
-				</section>
-
-				<section class='w-full flex flex-col gap-y-4 mt-8'>
-					<h3 class='text-3xl text-bold text-center sm:text-left'>Databases</h3>
-					<div
-						class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'
-					>
-						<Icon
-							class='h-12 w-12'
-							name='logos:postgresql'
-							title='PostgreSQL'
-						/>
-						<Icon class='h-12 w-12' name='logos:mysql' title='MySQL' />
-						<Icon class='h-12 w-12' name='logos:mongodb-icon' title='MongoDB' />
-						<Icon class='h-12 w-12' name='logos:sqlite' title='SQLite' />
-						<Icon class='h-12 w-12' name='logos:prisma' title='Prisma' />
-					</div>
-				</section>
-
-				<section class='w-full flex flex-col gap-y-4 mt-8'>
-					<h3 class='text-3xl text-bold text-center sm:text-left'>Other</h3>
-					<div
-						class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'
-					>
-						<Icon class='h-12 w-12' name='logos:aws' title='AWS' />
-						<Icon class='h-12 w-12' name='logos:jira' title='JIRA' />
-						<Icon
-							class='h-12 w-12'
-							name='logos:confluence'
-							title='Confluence'
-						/>
-						<Icon class='h-12 w-12' name='logos:git-icon' title='Git' />
-						<Icon class='h-12 w-12' name='logos:github' title='Github' />
-						<Icon
-							class='h-12 w-12'
-							name='logos:github-actions'
-							title='Github Actions'
-						/>
-						<Icon class='h-12 w-12' name='logos:ubuntu' />
-						<Icon class='h-12 w-12' name='logos:docker-icon' title='Docker' />
-					</div>
-				</section>
-			</article>
-
 			<!-- WORK EXPERIENCE -->
 			<section class='w-full flex flex-col gap-y-4 mt-8'>
 				<h2 class='text-4xl text-bold text-center sm:text-left'>
@@ -159,6 +69,103 @@ import PageLayout from '../layouts/PageLayout.astro';
 					</li>
 				</ul>
 			</section>
+
+			<!-- SKILLS -->
+			<article class='w-full flex flex-col gap-y-4 mt-8'>
+				<h2 class='text-4xl text-bold text-center sm:text-left'>Skills</h2>
+
+				<section class='w-full flex flex-col gap-y-4 mt-8'>
+					<h3 class='text-3xl text-bold text-center sm:text-left'>
+						Programming Languages
+					</h3>
+					<div class='flex w-full gap-x-4 justify-center sm:justify-start'>
+						<Icon class='h-8 w-8' name='logos:javascript' title='JavaScript' />
+						<Icon
+							class='h-8 w-8'
+							name='logos:typescript-icon'
+							title='Typescript'
+						/>
+						<Icon class='h-8 w-8' name='logos:python' title='Python' />
+					</div>
+				</section>
+
+				<section class='w-full flex flex-col gap-y-4 mt-8'>
+					<h3 class='text-3xl text-bold text-center sm:text-left'>
+						Web development
+					</h3>
+					<div class='flex w-full gap-x-4 justify-center sm:justify-start'>
+						<Icon class='h-8 w-8' name='logos:html-5' title='HTML' />
+						<Icon class='h-8 w-8' name='logos:css-3' title='CSS' />
+						<Icon
+							class='h-8 w-8'
+							name='logos:tailwindcss-icon'
+							title='Tailwind'
+						/>
+					</div>
+				</section>
+
+				<section class='w-full flex flex-col gap-y-4 mt-8'>
+					<h2 class='text-3xl text-bold text-center sm:text-left'>
+						Frameworks
+					</h2>
+					<div
+						class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'
+					>
+						<Icon class='h-8 w-8' name='logos:react' title='React' />
+						<Icon class='h-8 w-8' name='logos:solidjs' title='Solid.js' />
+						<Icon class='h-8 w-8' name='logos:svelte-icon' title='Svelte' />
+						<Icon class='h-8 w-8' name='logos:astro-icon' title='Astro.js' />
+
+						<Icon class='h-8 w-8' name='logos:vitejs' title='Vite' />
+						<Icon class='h-8 w-8' name='logos:nodejs-icon' title='Node.js' />
+						<Icon class='h-8 w-8' name='logos:bun' title='Bun.js' />
+						<Icon class='h-8 w-8' name='logos:yarn' title='Yarn' />
+					</div>
+				</section>
+
+				<section class='w-full flex flex-col gap-y-4 mt-8'>
+					<h3 class='text-3xl text-bold text-center sm:text-left'>Databases</h3>
+					<div
+						class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'
+					>
+						<Icon class='h-8 w-8' name='logos:postgresql' title='PostgreSQL' />
+						<Icon class='h-8 w-8' name='logos:mysql' title='MySQL' />
+						<Icon class='h-8 w-8' name='logos:mongodb-icon' title='MongoDB' />
+						<Icon class='h-8 w-8' name='logos:sqlite' title='SQLite' />
+						<Icon class='h-8 w-8' name='logos:prisma' title='Prisma' />
+					</div>
+				</section>
+
+				<section class='w-full flex flex-col gap-y-4 mt-8'>
+					<h3 class='text-3xl text-bold text-center sm:text-left'>
+						Project management
+					</h3>
+					<div
+						class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'
+					>
+						<Icon class='h-8 w-8' name='logos:jira' title='JIRA' />
+						<Icon class='h-8 w-8' name='logos:confluence' title='Confluence' />
+						<Icon class='h-8 w-8' name='logos:git-icon' title='Git' />
+						<Icon class='h-8 w-8' name='logos:github' title='Github' />
+					</div>
+				</section>
+
+				<section class='w-full flex flex-col gap-y-4 mt-8'>
+					<h3 class='text-3xl text-bold text-center sm:text-left'>DevOps</h3>
+					<div
+						class='flex w-full gap-4 justify-center sm:justify-start flex-wrap'
+					>
+						<Icon class='h-8 w-8' name='logos:aws' title='AWS' />
+						<Icon
+							class='h-8 w-8'
+							name='logos:github-actions'
+							title='Github Actions'
+						/>
+						<Icon class='h-8 w-8' name='logos:ubuntu' />
+						<Icon class='h-8 w-8' name='logos:docker-icon' title='Docker' />
+					</div>
+				</section>
+			</article>
 
 			<!-- CERTIFICATES -->
 			<section class='w-full flex flex-col gap-y-4 mt-8'>
