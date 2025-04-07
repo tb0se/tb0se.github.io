@@ -7,7 +7,13 @@ const projectsCollection = defineCollection({
 			description: z.string(),
 			github: z.string().url(),
 			demo: z.string().url().optional(),
-			techUsed: z.enum(['React', 'Svelte', 'Solidjs', 'Expressjs']),
+			techUsed: z.enum([
+				'React',
+				'Svelte',
+				'Solidjs',
+				'Expressjs',
+				'JavaScript',
+			]),
 			image: image(),
 		}),
 });

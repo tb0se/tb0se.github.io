@@ -12,7 +12,7 @@ const { project } = Astro.props;
 <article class='max-w-sm w-full rounded-md'>
 	<a href={`/projects/${project.slug}`} class='w-full'>
 		<Image
-			class='w-full rounded-t-md'
+			class='w-full rounded-t-md min-h-[200px]'
 			src={project.data.image}
 			alt={project.data.title}
 		/>
