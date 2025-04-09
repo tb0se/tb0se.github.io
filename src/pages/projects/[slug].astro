@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import PageLayout from '../../layouts/PageLayout.astro';
 import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
 
 export const getStaticPaths = (async () => {
 	const projects = await getCollection('projects');
@@ -33,10 +34,17 @@ const { Content } = await project.render();
 
 <Layout title={project.data.title} description={project.data.description}>
 	<PageLayout heading={project.data.title}>
-		<ul class='flex gap-x-4 items-center'>
+		<ul class='flex gap-x-4 items-center justify-end'>
 			<li>
-				<a href={project.data.github}>
-					<Icon class='h-12 w-12 rounded-full' name='mdi:github' />
+				<a
+					class='hover:text-blue-600 hover:underline'
+					href={project.data.github}
+					target='_blank'
+				>
+					<Icon
+						class='h-10 md:h-12 w-10 md:w-12 rounded-full'
+						name='mdi:github'
+					/>
 				</a>
 			</li>
 			{
@@ -47,13 +55,48 @@ const { Content } = await project.render();
 							href={project.data?.demo}
 							target='_blank'
 						>
-							Demo
+							<Icon
+								class='h-10 md:h-12 w-10 md:w-12 '
+								name='nimbus:external-link'
+							/>
+						</a>
+					</li>
+				)
+			}
+			{
+				project.data?.backend && (
+					<li>
+						<a
+							class='hover:text-blue-600 hover:underline'
+							href={project.data?.backend}
+							target='_blank'
+						>
+							<Icon class='h-10 md:h-12 w-10 md:w-12 ' name='mdi:database' />
+						</a>
+					</li>
+				)
+			}
+
+			{
+				project.data?.npm && (
+					<li>
+						<a
+							class='hover:text-blue-600 hover:underline'
+							href={project.data?.npm}
+							target='_blank'
+						>
+							<Icon class='h-10 md:h-12 w-10 md:w-12 ' name='mdi:npm' />
 						</a>
 					</li>
 				)
 			}
 		</ul>
-		<div class='w-full mt-4'>
+		<Image
+			class='w-full rounded-t-md min-h-[200px]'
+			src={project.data.image}
+			alt={project.data.title}
+		/>
+		<div class='prose-[#FFF] prose-lg w-full mt-4'>
 			<Content />
 		</div>
 	</PageLayout>
