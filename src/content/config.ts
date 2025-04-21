@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { techUsed } from '../utils/constants';
 
 const projectsCollection = defineCollection({
 	schema: ({ image }) =>
@@ -9,29 +10,7 @@ const projectsCollection = defineCollection({
 			demo: z.string().url().optional(),
 			backend: z.string().url().optional(),
 			npm: z.string().url().optional(),
-			techUsed: z.array(
-				z.enum([
-					'React',
-					'Svelte',
-					'Solidjs',
-					'Expressjs',
-					'JavaScript',
-					'HTML',
-					'CSS',
-					'TailwindCSS',
-					'Vite',
-					'NodeJS',
-					'BunJS',
-					'PostgreSQL',
-					'MySQL',
-					'MongoDB',
-					'SQLLite',
-					'Prisma',
-					'Docker',
-					'Kubernetes',
-					'TypeScript',
-				])
-			),
+			techUsed: z.array(z.enum(techUsed)),
 			image: image(),
 		}),
 });

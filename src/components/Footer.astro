@@ -3,11 +3,11 @@ import { astroUrl, coderUrl } from '../utils/constants';
 const year = new Date().getFullYear();
 ---
 
-<footer class='flex justify-center items-center w-full h-10'>
+<footer class='flex justify-center items-center w-full h-10 px-2'>
 	<section class='flex gap-x-2'>
-		<h3 class='text-md font-medium'>© {year} Thabo Rachidi</h3>
+		<h3 class='text-sm md:text-base font-medium'>© {year} Thabo Rachidi</h3>
 		·
-		<p class='text-base font-medium'>
+		<p class='text-sm md:text-base font-medium'>
 			Powered by
 			<a class='underline text-blue-600' href={astroUrl}>Astro</a>
 			&
