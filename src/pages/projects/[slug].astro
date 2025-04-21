@@ -44,6 +44,7 @@ const { Content } = await project.render();
 					<Icon
 						class='h-10 md:h-12 w-10 md:w-12 rounded-full'
 						name='mdi:github'
+						title='GitHub'
 					/>
 				</a>
 			</li>
@@ -58,6 +59,7 @@ const { Content } = await project.render();
 							<Icon
 								class='h-10 md:h-12 w-10 md:w-12 '
 								name='nimbus:external-link'
+								title='Demo'
 							/>
 						</a>
 					</li>
@@ -71,7 +73,11 @@ const { Content } = await project.render();
 							href={project.data?.backend}
 							target='_blank'
 						>
-							<Icon class='h-10 md:h-12 w-10 md:w-12 ' name='mdi:database' />
+							<Icon
+								class='h-10 md:h-12 w-10 md:w-12 '
+								name='mdi:database'
+								title='Backend'
+							/>
 						</a>
 					</li>
 				)
@@ -85,18 +91,24 @@ const { Content } = await project.render();
 							href={project.data?.npm}
 							target='_blank'
 						>
-							<Icon class='h-10 md:h-12 w-10 md:w-12 ' name='mdi:npm' />
+							<Icon
+								class='h-10 md:h-12 w-10 md:w-12 '
+								name='mdi:npm'
+								title='NPM'
+							/>
 						</a>
 					</li>
 				)
 			}
 		</ul>
 		<Image
-			class='w-full rounded-t-md min-h-[200px]'
+			class='w-full rounded-md min-h-[200px]'
 			src={project.data.image}
 			alt={project.data.title}
 		/>
-		<div class='prose-[#FFF] prose-lg w-full mt-4'>
+		<div
+			class='prose-[#FFF] prose-lg w-full mt-4 prose-a:text-blue-600 hover:prose-a:underline prose-ul:list-disc prose-p:flex prose-p:gap-x-2 prose-p:flex-wrap'
+		>
 			<Content />
 		</div>
 	</PageLayout>
